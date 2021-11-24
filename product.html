@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title> Hydrate </title>
+    <link rel="shortcut icon" type="Image/png" href="images/logo.png" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css" />
+</head>
+
+<body>
+    <div class="banner">
+        <div class="nav">
+            <input type="checkbox" id="nav-check" />
+            <div class="nav-header">
+                <div class="nav-title">
+                    <img src="./images/logo.png" id="logo" alt="logo">
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html" onclick="updatescroll();">Home</a></li>
+                    <li><a href="index.html#about" onclick="updatescroll();">About</a></li>
+                    <li><a href="index.html#catalog" onclick="updatescroll();">Catalog</a></li>
+                    <li><a href="index.html#contact" onclick="updatescroll();">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="specific-product-base">
+            <div class="specific-product-section" id="specific-image-section">
+                <img src="https://www.ikea.com/th/en/images/products/ikea-365-water-bottle-dark-grey__0916298_pe785100_s5.jpg"
+                    id="specific-product-image" alt="product image">
+            </div>
+            <div class="specific-product-section">
+                <div id="specific-product-description">
+                    <div id="specific-product-name">
+                        <h1>
+                            Water Bottle
+                        </h1>
+                    </div>
+                    <div id="specific-product-writing">
+                        <p>
+                            A very mild description of the product.
+                        </p>
+                    </div>
+                    <div id="specific-product-price">
+                        <p> From ฿120 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div id="footer-upper">
+                <ul>
+                    <li> <a href="https://www.facebook.com/cmishydrate/" class="fa fa-facebook"> </a> </li>
+                    <li> <a href="https://www.instagram.com/hydrate_2021/" class="fa fa-instagram"> </a> </li>
+                    <li> <a href="mailto:hydrate2021@gmail.com" class="fa fa-envelope"> </a> </li>
+                </ul>
+            </div>
+            <div id="footer-lower">
+                <p> Hydrate 2021 </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scroll.js"> </script>
+</body>
+
+</html>
