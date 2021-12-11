@@ -68,7 +68,7 @@
   }
 
     .middle-overlay h2 {
-    font-size: 1em;
+    font-size: 0.75em;
         font-weight: 100;
   }
 
@@ -299,7 +299,6 @@
 }
 
 .product-element {
-  cursor: pointer;
     margin: 12px;
     display: inline-block;
     width: 300px;
@@ -313,7 +312,6 @@
 
 .product-element:hover {
     color: rgb(17,142,208);
-    box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.01 );
 }
 
 .product-element:hover .product-description p:last-child {

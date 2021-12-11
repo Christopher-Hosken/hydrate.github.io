@@ -22,7 +22,7 @@
         </div>
         <div class="middle-overlay">
             <h1> We are Hydrate </h1>
-            <h2> A Water Bottle Company </h2>
+            <h2> A JA Company </h2>
         </div>
     </div>
     <div class="main-content">
@@ -30,13 +30,9 @@
             <div class="container">
                 <div id="company-description">
                     <h3> Who are we? </h3>
-                    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum." </p>
+                    <p> We're a small water bottle company located in Chiang Mai, Thailand. Our team consists of students from Chiang Mai International School. 
+                        The purpose of this company is to give students a taste of what running and working in a company is like, as well to compete in the Junior Achievement Thailand Competition. 
+                    </p> <p>If you're interested in buying one of our bottles, place an order or contact us by email! </p>
                 </div>
                 <div id="company-photo">
                     <img src="./images/group.jpeg" alt="team">
@@ -50,7 +46,7 @@
                         name: "Metallica",
                         price: 399,
                         imgs: ["./images/st017/st017_black.png"],
-                        desc: "A cool description.",
+                        desc: "Metallica is Hydrate's first bottle. With a",
                     },
                 ];
                 let text = "";
@@ -59,7 +55,7 @@
                         text += "<div id='product-row'>";
                     }
 
-                    text += '<div onclick="openproduct(' + "'" + String(products[i].name) + "'" + "," + "'" + products[i].imgs + "'" + "," + "'" + String(products[i].price) + "'" + "," + "'" + String(products[i].desc) + "'" + ');">' + "<div class='product-element'>" + "<img src=" + products[i].imgs[0] + ">" + "<div class='product-description'>" + "<p>" + products[i].name + "</p>" + "<p> From ฿" + products[i].price + "</p>" + "</div>" + "</div>" + "</div>";
+                    text += "<div> <div class='product-element'>" + "<img src=" + products[i].imgs[0] + ">" + "<div class='product-description'>" + "<p>" + products[i].name + "</p>" + "<p> From ฿" + products[i].price + "</p>" + "</div>" + "</div>" + "</div>";
 
                     if ((i + 1) % 3 == 0) {
                         text += "</div>";
@@ -67,21 +63,6 @@
                 }
 
                 document.getElementById("catalog").innerHTML = text;
-                function openproduct(name, imgs, price, desc) {
-                    var page = window.open("product.html");
-                    console.log(name);
-                    console.log(imgs);
-                    console.log(price);
-                    console.log(desc);
-                    console.log(page.document.documentElement.innerHTML);
-
-                    page.onload = function () {
-                        page.document.getElementById("specific-product-name").innerHTML = "<h1>" + name + "</h1>";
-                        page.document.getElementById("specific-image-section").innerHTML = "<img src='" + String(imgs) + "' id='specific-product-image' alt='product image'>";
-                        page.document.getElementById("specific-product-writing").innerHTML = "<p>" + desc + "</p>";
-                        page.document.getElementById("specific-product-price").innerHTML = "<p>" + "From ฿" + price + "</p>";
-                    }
-                }
 
             </script>
             <div id="order">
@@ -92,7 +73,7 @@
             <div class="container">
                 <div id="contact-info">
                     <h2> Get In Contact </h2>
-                    <p> Want a bottle? Email us! </p>
+                    <p> Want a custom bottle? Email us! </p>
 
                     <div id="email">
                         <a href="mailto:hydrate2021@gmail.com" id="contact-email">
