@@ -23,6 +23,9 @@
         <div class="middle-overlay">
             <h1> We are Hydrate </h1>
             <h2> A JA Company </h2>
+            <div id="order">
+                <a href="#catalog" id="contact-email"> Go to Catalog </a>
+            </div>
         </div>
     </div>
     <div class="main-content">
@@ -43,10 +46,16 @@
             <script>
                 const products = [
                     {
-                        name: "Metallica",
-                        price: 399,
+                        name: "Metallica (Black)",
+                        price: 349,
                         imgs: ["./images/st017/st017_black.png"],
-                        desc: "Metallica is Hydrate's first bottle. With a",
+
+                    },
+                    {
+                        name: "Metallica (White)",
+                        price: 349,
+                        imgs: ["./images/st017/st017_white.png"],
+
                     },
                 ];
                 let text = "";
@@ -55,7 +64,7 @@
                         text += "<div id='product-row'>";
                     }
 
-                    text += "<div> <div class='product-element'>" + "<img src=" + products[i].imgs[0] + ">" + "<div class='product-description'>" + "<p>" + products[i].name + "</p>" + "<p>From <del> ฿" + products[i].price + "</del>" + " ฿349 " + "</p>" + "</div>" + "</div>" + "</div>";
+                    text += "<div> <div class='product-element'>" + "<img src=" + products[i].imgs[0] + ">" + "<div class='product-description'>" + "<p>" + products[i].name + "</p>" + "<p>From ฿" + products[i].price + "</p>" + "</div>" + "</div>" + "</div>";
 
                     if ((i + 1) % 3 == 0) {
                         text += "</div>";
